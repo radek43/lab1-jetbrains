@@ -1,0 +1,9 @@
+[ {
+  "nume" : "Popescu",
+  "prenume" : "George",
+  "medie" : 9.5
+}, {
+  "nume" : "Ardelean",
+  "prenume" : "Mihai",
+  "medie" : 8.2
+} ]
