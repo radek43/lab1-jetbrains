@@ -35,7 +35,11 @@ public class Interface extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(rootPanel, "Introduceti doar numere in campul 'medie'.");
                     } else {
                         if (isValueInTable(studentTable, idTextField.getText())) {
-
+                            int selectedRow = studentTable.getSelectedRow();
+                            tableModel.setValueAt(idTextField.getText(), selectedRow, 0);
+                            tableModel.setValueAt(numeTextField.getText(), selectedRow, 1);
+                            tableModel.setValueAt(prenumeTextField.getText(), selectedRow, 2);
+                            tableModel.setValueAt(medieTextField.getText(), selectedRow, 3);
                         } else {
                             Student studentAdd = new Student(numeTextField.getText(), prenumeTextField.getText(), medieTextField.getText());
                             tableModel.addRow(new Object[]{studentAdd.getId(), studentAdd.getNume(), studentAdd.getPrenume(), studentAdd.getMedie()});
@@ -65,6 +69,16 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        stergeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(studentTable.getSelectedRow() != -1) {
+                    // remove selected row from the model
+                    tableModel.removeRow(studentTable.getSelectedRow());
+                }
+                exportData(tableModel);
+            }
+        });
     }
     public JPanel getRootPanel() {
         return rootPanel;
@@ -88,6 +102,7 @@ public class Interface extends javax.swing.JFrame {
     private void createTable() {
         studentTable.setDefaultEditor(Object.class, null);
         studentTable.setModel(tableModel);
+        studentTable.setAutoCreateRowSorter(true);
         ReaderWriter rw = new ReaderWriter();
         List<Student> students = rw.read();
 

@@ -1,31 +1,16 @@
 [ {
-  "id" : "c0dc24a8a1d94dfaa7d019bdd52000e7",
-  "nume" : "tttt",
-  "prenume" : "ttt",
-  "medie" : "9.5"
-}, {
-  "id" : "78edf1ef00f346a2a87bb93d54673f1d",
-  "nume" : "ttt",
+  "id" : "41c291678f3342ee8780eee1ef9745dc",
+  "nume" : "tttggggtttt",
   "prenume" : "ttt",
   "medie" : "8.2"
 }, {
-  "id" : "9f768dd6fc994b479711106aba6f6070",
-  "nume" : "dasdas",
-  "prenume" : "asdasd",
+  "id" : "e1fb00b935524786bee31a59916ebdd1",
+  "nume" : "tttgggg",
+  "prenume" : "tttgggg",
+  "medie" : "8.2"
+}, {
+  "id" : "b687aabf0cd44776bf620419df96d5ea",
+  "nume" : "tttggggtttt",
+  "prenume" : "ttt",
   "medie" : "12"
-}, {
-  "id" : "97ac21b40dbb48e7bc587729c995a685",
-  "nume" : "tttsdasd",
-  "prenume" : "ttt",
-  "medie" : "8.2"
-}, {
-  "id" : "24ee0d3b1330490a8211d13b7c08f919",
-  "nume" : "ttt",
-  "prenume" : "ttt",
-  "medie" : "8.2"
-}, {
-  "id" : "051a117b77494bac8e10a89ceb50356c",
-  "nume" : "ttt",
-  "prenume" : "ttt",
-  "medie" : "8.2"
 } ]
